@@ -1,0 +1,17 @@
+double l (double x)
+{
+	double res = 0;
+	for (int i = 0; i <= n; i++)
+	{
+		double prod = y[i];
+		for (int j = 0; j <= n; j++)
+		{
+			if (i == j)
+			{
+				prod *= (x - xmas[j])/(xmas[i]-xmas[j]);
+			}
+		res += prod;
+		}
+	return res;
+	}
+}
